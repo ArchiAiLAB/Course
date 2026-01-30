@@ -1,8 +1,8 @@
 from ultralytics import YOLO
-model = YOLO("yolov8n.pt") 
+model = YOLO("user_best.pt")  
 results = model(
-    source = r'C:\Users\User\Documents\...\coco128\images\train2017',
-    imgsz = 224,
+    source = r'C:\Users\User\Documents\...\test\images',
+    imgsz = 640,
     save = True,
     save_txt = True    
     )  
